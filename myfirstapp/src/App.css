@@ -5,6 +5,10 @@ border: solid black;
 background-color: green;
 color: aliceblue;
 }
-h1{
+h2{
   color: red;
+
+}
+img{
+  width: 200px;
 }
