@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 
 
 
@@ -9,6 +9,7 @@ import { useRef } from "react"
 const Uncontroled=()=>{
     const emailRef=useRef()
     const passwordRef=useRef()
+    const[error,setError]=useState("")
 
 const handleSubmit=(event)=>{
         event.preventDefault()
@@ -38,7 +39,18 @@ fetch('https://dummyjson.com/auth/login', {
   body: JSON.stringify( data)
 })
 .then(res => res.json())
-.then(res=>console.log(res))
+.then(res=>{
+if(res.message){
+   
+  setError(res.message)
+
+}else{
+  alert("sucessfulllllllllllllllll")
+  setError("")
+}
+
+
+})
 .catch(err=>console.log(err))
 }
 
@@ -51,13 +63,26 @@ return(
     <input type="text" className="form-control" id="email"  ref={emailRef}/>
   </div>
   <div className="form-group">
-    <label >Password:</label>
-    <input type="password" className="form-control" id="pwd"   ref={passwordRef} />
+    <label >Password:</label>{
+error?
+<input type="password" className="form-control" id="pwd"   ref={passwordRef}  style={{borderColor:"red" }}/>
+:
+<input type="password" className="form-control" id="pwd"   ref={passwordRef} />
+
+
+    }
+    
   </div>
   <div className="checkbox">
     <label><input type="checkbox"/> Remember me</label>
   </div>
-  <button type="submit" className="btn btn-default">Submit</button>
+  {
+    error ? 
+    <h5 style={{color:"red"}}>{error}</h5>
+    :
+    null
+  }
+  <button type="submit" className="btn btn-default" style={{color:"white",backgroundColor:"green"}}>Submit</button>
 </form>
 
 </>
@@ -68,3 +93,5 @@ return(
 }
 
 export default Uncontroled
+
+ 

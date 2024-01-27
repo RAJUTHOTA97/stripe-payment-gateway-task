@@ -12,6 +12,8 @@
 // import UseStateexample from "./components/hooks/useState/useStateEx1";
  import UseStateExample3 from "./components/hooks/useState/useStateex3";
  import Uncontroled from "./components/forms/uncontoled";
+ import Circle from "./components/hooks/useState/circle";
+ import Controlled from "./components/forms/controled";
 
 
  function App() {
@@ -33,7 +35,9 @@
        
         {/* <UseStateExample3/> */}
 
-        <Uncontroled/>
+        {/* <Uncontroled/> */}
+        {/* <Circle/> */}
+       < Controlled/>
     
 
     </div>
