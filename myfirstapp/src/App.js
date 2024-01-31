@@ -10,10 +10,13 @@
 // import Cards from "./components/boostrap/cards";
 // import Mounting from "./components/lifecycle/mounting/mounting";
 // import UseStateexample from "./components/hooks/useState/useStateEx1";
- import UseStateExample3 from "./components/hooks/useState/useStateex3";
- import Uncontroled from "./components/forms/uncontoled";
- import Circle from "./components/hooks/useState/circle";
- import Controlled from "./components/forms/controled";
+//  import UseStateExample3 from "./components/hooks/useState/useStateex3";
+//  import Uncontroled from "./components/forms/uncontoled";
+//  import Circle from "./components/hooks/useState/circle";
+//  import Controlled from "./components/forms/controled";
+import Navigator from "./navigationStack/navigationStack";
+  
+ 
 
 
  function App() {
@@ -37,8 +40,9 @@
 
         {/* <Uncontroled/> */}
         {/* <Circle/> */}
-       < Controlled/>
-    
+       {/* <Controlled />
+        */}
+    <Navigator/>
 
     </div>
    

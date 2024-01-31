@@ -24,6 +24,23 @@ const BoostapLayout=()=>{
             designation:"Co-founder",
             color:"green",
             salary:"10"
+        },   {
+            name:"Raju",
+            designation:"Ceo",
+            color: "red",
+            salary: "NP"
+        },
+        {
+            name:"Ram",
+            designation:"Founder",
+            color: "yellow",
+            salary: "20"
+        },
+        {
+            name:"Rahem",
+            designation:"Co-founder",
+            color:"green",
+            salary:"10"
         }
 ]
 
@@ -31,7 +48,7 @@ const BoostapLayout=()=>{
         <>
         <div className="container-fluid p-5 bg-primary text-white text-center">
   <h1>well come to my page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <p>The way to learn web development</p> 
 </div>
   
 <div className="container mt-5">
@@ -44,6 +61,17 @@ const BoostapLayout=()=>{
     </div>
     <div className="col-sm-4"> 
     <Cards profile={members[2]}/>
+    </div>
+  </div>
+  <div className="row">
+    <div className="col-sm-4">
+       <Cards profile={members[3]}/>
+    </div>
+    <div className="col-sm-4">
+       <Cards profile={members[4]}/>
+    </div>
+    <div className="col-sm-4"> 
+    <Cards profile={members[5]}/>
     </div>
   </div>
 </div>
