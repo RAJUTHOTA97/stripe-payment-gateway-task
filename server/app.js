@@ -40,13 +40,6 @@ app.post("/api/create-checkout-session", async (req, res) => {
     }
 });
 
-app.listen(7000, () => {
+app.listen(3000, () => {
     console.log("server start");
 });
-
-
-
-
-
-
-
