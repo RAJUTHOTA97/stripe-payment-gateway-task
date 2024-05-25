@@ -28,8 +28,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
                 quantity: 1,
             }],
             mode: "payment",
-            success_url: "http://localhost:3000/success",
-            cancel_url: "http://localhost:3000/cancel",
+            success_url: "https://stripe-payment-gateway-frontend.vercel.app/success",
+            cancel_url: "https://stripe-payment-gateway-frontend.vercel.app/cancel",
         });
 
         res.json({ id: session.id });
