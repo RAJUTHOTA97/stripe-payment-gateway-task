@@ -2,16 +2,15 @@
 import './App.css';
  
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./clintSide/main"
-import Main from './clintSide/main';
+import Main_test from './clintSide/maintest';
  
 
 function App() {
   return (
     <div className="App">
      
-     <Main/>
-     
+  
+     <Main_test/>
       
     </div>
   );
